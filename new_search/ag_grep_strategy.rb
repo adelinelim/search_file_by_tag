@@ -24,6 +24,6 @@ class AgGrepSearchStrategy
   def generate_included_list
     @file_list&.map do |f|
       "--#{f}"
-    end.join(" ")
+    end&.join(" ")
   end
 end
