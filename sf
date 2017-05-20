@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require_relative "initializer"
+# require "pry"
+
+def main
+  searcher = Search2.new(ARGV)
+  keywords = searcher.get_keywords
+  search_results = searcher.generate_search_result_in_hash
+  config_color_data = Configuration.get_config_color
+
+  search_results.each do |sr|
+    file_ext = Configuration.get_file_extension(sr[:filename])
+
+    puts CustomizeSearchResult.new(
+      filename: sr[:filename],
+      content: sr[:content],
+      keywords: keywords,
+      color_code: config_color_data[file_ext]
+    ).color_search_result
+  end
+end
+
+main
+# to run this do ./sf word1 word2

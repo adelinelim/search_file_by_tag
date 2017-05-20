@@ -1,0 +1,14 @@
+/* color from 0 to 255 */
+{
+  "color": {
+    "rb": 1,
+    "js": 2,
+    "css": 3,
+    "scss": 3,
+    "yml": 4,
+    "bak": 5,
+    "html": 6,
+    "erb": 7,
+    "md": 8
+  }
+}

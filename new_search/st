@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative "../initializer.rb"
+
+def main
+  search_parameters = SearchArgumentParser.new.parse!
+  Search.new(search_parameters)
+end
+
+main
+
+# to run this do ./st word1 word2

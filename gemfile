@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+# gem "trollop"
+gem "pry-byebug"
+gem "pry-rails"
+gem "ag"
+gem "OptionParser"
