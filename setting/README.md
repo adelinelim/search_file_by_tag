@@ -1,5 +1,5 @@
 # Search Hashtag Keywords in files
-This tool is to search all the hashtag keywords in the files.
+This tool is to search all the hashtag keywords in the files
 
 # Setup
 
@@ -53,7 +53,7 @@ Set the sf path to where you cloned the repository, example like below:
   sf keyword1 keyword2
   ```
 
-3.  The above command `sf keyword1 keyword2` will returns all the search results with hashtag keywords of **#keyword1** OR **#keyword2**.
+3.  The above command `sf keyword1 keyword2` will returns all the search results with hashtag keywords of **#keyword1** and **#keyword2**.
 
   Sample search result:
   **filename => search content**

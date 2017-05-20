@@ -60,7 +60,6 @@ class Search
 
   def get_searched_file_list
     keywords = @search_parameters.keywords
-    binding.pry
     include_file_list = include_files(@search_parameters.include_extension)
     first_keyword = keywords.first
     selected_files = AgGrepSearchStrategy.new.search_all_files(first_keyword, include_file_list)
